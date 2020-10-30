@@ -42,7 +42,11 @@ public class App {
     	vehicleObjectUsingComponent.drive();
     	
     	
+    	// using property tag from spring.xml file
+    	// since property tag is being used, value is set using the "setter"
+    	
     	Tyre tyre = (Tyre) context.getBean("tyre");
+    	System.out.println(tyre);
     	
     }
     
