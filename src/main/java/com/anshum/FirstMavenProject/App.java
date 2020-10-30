@@ -1,4 +1,4 @@
-package com.anshum.FirstMavenProject;
+package com.anshum.firstMavenProject;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -34,8 +34,15 @@ public class App {
     	
     	ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
     	
-    	Vehicle vehicleObject = (Vehicle) context.getBean("vehicle");
-    	vehicleObject.drive();
+    	Vehicle vehicleObjectUsingBeanId = (Vehicle) context.getBean("vehicle");
+    	vehicleObjectUsingBeanId.drive();
+    	
+    	
+    	Vehicle vehicleObjectUsingComponent = (Vehicle) context.getBean("car");
+    	vehicleObjectUsingComponent.drive();
+    	
+    	
+    	Tyre tyre = (Tyre) context.getBean("tyre");
     	
     }
     

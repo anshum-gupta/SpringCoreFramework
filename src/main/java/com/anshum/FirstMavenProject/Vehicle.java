@@ -1,4 +1,4 @@
-package com.anshum.FirstMavenProject;
+package com.anshum.firstMavenProject;
 
 public interface Vehicle {
 	
